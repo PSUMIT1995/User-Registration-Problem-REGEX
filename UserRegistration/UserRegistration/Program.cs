@@ -15,7 +15,7 @@ namespace UserRegistration
             string lastName = @"^[A-Z]{1}[a-zA-Z]{2,9}$";
             string emailId = @"^[a-zA-Z0-9]+[._+-]{0,1}[a-zA-Z0-9]@[a-zA-Z0-9]{1,10}.[a-zA-Z]{2,10}[.][a-zA-Z]"; 
             string phoneNum = @"[0-9]{2}\s+[1-9]{10}$";
-            string password = @"[a-zA-Z]{8}$";//creating pattern for password
+            string password = @"[A-Z]{1}[a-zA-Z]{7}$"; ;//creating pattern for password
 
             Regex regex = new Regex(password);
             Console.WriteLine(regex.IsMatch(inStr));
